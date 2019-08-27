@@ -75,12 +75,12 @@
 
 <h3>Meets Expectations</h3>
     <ul>
-        <li>The navigation menu items have working links to the differnt sections that use IDs to link to relevant anchor tags.</li>
+        <li>The navigation menu items have working links to the different sections that use IDs to link to relevant anchor tags.</li>
     </ul>
 
 <h3>Exceeds Expectations</h3>
     <ul>
-        <li>The &gt;nav&lt; tag is being used for the navigation bar.</li>
+        <li>The &lt;nav&gt; tag is being used for the navigation bar.</li>
         <li>Additional section has been added to the page, such as a skills section, and a working link to the new section has been added to the navigation bar using an ID to link to anchor tag.</li>
     </ul>
 
