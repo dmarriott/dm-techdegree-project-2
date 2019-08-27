@@ -69,6 +69,7 @@
             <li>One additional Google Font has been added, and is being used on the page.</li>
             <li>Any additional styling for links has been added.</li>
         </ul>
+    </ul>
 
 <h2>Navigation and sections</h2>
 
