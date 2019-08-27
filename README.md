@@ -28,7 +28,7 @@
 <h3>Exceeds Expectations</h3>
     <ul>
         <li>n/a</li>
-    <ul>
+    </ul>
 
 <h2>Mobile-first design</h2>
 
