@@ -10,14 +10,14 @@ base element
 
 body {
     font-family: "Source Sans Pro", sans-serif;
-    line-height: 1.6;
+    line-height: 1.3;
     color: 000000;
     background: #f6f6f6;
 }
 
 p {
-    font-size: .95em;
-    margin-bottom: 1.8em;
+    font-size: 1em;
+    /* margin-bottom: .2em; */
 }
 
 h1 {
@@ -27,8 +27,6 @@ h1 {
 h2 {
     font-size: 1.2em;
     text-transform: uppercase;
-    padding-top: 2em;
-    padding-bottom: 2em;
 }
 
 h1,
@@ -73,18 +71,22 @@ h1.main-title {
     text-transform: uppercase;
 }
 
-.main-nav li {
-    border: 5px;
+/* .main-nav li {
+    border-top: 5px;
+    border-right: 0px;
+    border-bottom: 5px;
+    border-left: 0px;
     border-color: #f6f6f6;
-}
+} */
 
 .main-nav a {
     text-align: center;
     color: black;
     display: block;
-    padding: 10px 15px;
-    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
     background: white;
+    border: 1px solid red;
 }
 
 .main-nav a:hover {
@@ -96,18 +98,27 @@ h1.main-title {
 layout containers  
 =========================================  */
 
+.main-header {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 0em;
+    padding-right: 0em;
+    text-align: center;
+}
+
+.main-headshot {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 75%;
+    margin: 0 auto;
+}
+
 .container {
     margin: 0 auto;
     background: white;
     padding: 0 1em;
-}
-
-.main-header {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: .5em;
-    padding-bottom: em;
-    text-align: center;
 }
 
 .container,
@@ -115,11 +126,20 @@ layout containers
     text-align: center;
 }
 
-.main-headshot {
-    padding-top: 50px;
-    padding-bottom: 25px;
-    width: 75%;
+featured-content.container {
+    width: 90%;
     margin: 0 auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+static-content.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
 }
 
 .main-footer {
