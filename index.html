@@ -17,71 +17,99 @@ Dennis Marriott
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="wrap">
     <header class="main-header">
-            <h1 class="main-title"><a href="#">Student Name</a></h1>
+            <h1 class="main-title">Student Name</h1>
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="main-headshot">
                 <img src="images/responsive-layout-profile.png" alt="student headshot">
             </div>
-            Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
-    </header> <!-- /.main-header -->
+            <p>Thank you for your interest.</p> 
+            <p>I recently finished a degree in front-end web development at Treehouse and have included my portfolio below.</p> 
+            <p>Although new to development, I have enjoyed much success in management with technology companies and other business sectors. I'm excited to put my professional experience and newly honed skills to use for you! </p>
+    </header> <!--  /.main-header  -->
 
     <featured-content>
         <div class="container">
-            <h2>Portfolio</h2>
+            <h2 id="portfolio">Portfolio</h2>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-1.png" alt="Marketing front page">
                 <h3>Marketing Page</h3>
-                This project shows the front page of a marketing website meant for a specific business I'm interested in.
+                <p>This landing page encourages the positive brand of Business B and features their most popular products and services.</p>
             </div>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-2.png" alt="Search front page">
                 <h3>Search Page</h3>
-                This project searches through a specific database to find information that the user is trying to look up.
+                <p>This easy-to-use search page queries a program catalogue database to help visitors find the perfect program, but any combination of retreat center, teacher, location and date range.</p>
             </div>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-3.png" alt="Travel app front page">
                 <h3>Travel App</h3>
-                This project compares the travel times based on different transportation methods and tells you the best one.
+                <p>This project compares travel times between specified locations, and based upon the transportation method selected, estimates your arrival time.</p>
             </div>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-4.png" alt="Map of favorite spots front page">
                 <h3>Map of Favorite Spots</h3>
-                This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+                <p>Find hidden gems in the city. This project uses mapping APIs to plot points for my favorite spots so you can enjoy a DIY walking tour.</p>
             </div>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-5.png" alt="Photo gallery front page">
                 <h3>Photo Gallery</h3>
-                This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+                <p>Browse photos from a personal gallery in this project using easy and intuitive navigation.</p>
             </div>
             <div>
                 <img class="portfolio-page-image" src="images/portfolio-6.png" alt="Calculator front page">
                 <h3>Calculator</h3>
-                Someone can enter in the numbers they want, and press the big blue buttom and get the result.
+                <p>And the answer is? This project allows the viewer to enter significant digits, choose a calculation, and then press the big blue button to instantly view the result.</p>
             </div>
-        </div> <!-- /.container -->
+        </div>  <!--   /.container  -->
     </featured-content>
 
-    <static-content class="container">
-        <h2>Skills</h2> 
-        <p>Here is a listing of my skills. I can do lots of stuff.</p>
-        <h2>Contact</h2> 
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
-        <p>Phone +1 (111) 555-1234</p>
-        <p>Email email@yoursite</p>
-    </static-content> <!-- /.about -->
 
-    <footer class="main-footer">
-        <hr>
+    <static-content>
+        <div class="aboutme">
+            <h2 id="skills">Skills and Education</h2> 
+            <p>A seasoned professional with 10+ years of business management experience, team leadership and continuous learning.</p>
+            <h3>Hard skills</h3>
+            <ul>
+                <li>HTML, CSS, Javascript and responsive design</li>
+                <li>CSS and Javascript frameworks, CSS preprocessing</li>
+                <li>Testing, debugging, technical documentation</li>
+            </ul>    
+            <h3>Soft skills</h3>
+            <ul>    
+                <li>Ability to manage complex, high-value projects</li>
+                <li>Strong verbal and written communicator</li>
+                <li>Self-motivated individual contributor</li>
+                <li>Supportive team player</li>
+            </ul>
+            <h3>Education</h3>
+            <ul>
+                <li>Engineering studies, US Naval Academy</li>
+                <li>BS Computer Science, Penn State University</li>
+                <li>AOS Culinary Arts, New England Culinary Institute</li>
+                <li>Techdegree - Front End Web Development, Treehouse Island, Inc</li>
+            </ul>
+            <hr class="darkgrey2">
+            <h2 id="contact">Contact</h2> 
+            <p>Let's chat. I'd love to learn more about your plans and projects, and explore ways that my skills and experience might be applied to help you meet your goals.</p>
+            <p>+1 250.555.1234</p>
+            <a class="email-address" href="mailto:email@mysite.com" target="_blank">email@mysite.com</a>
+        </div>   <!--   /.aboutme   -->
+    </static-content>
+</div> <!--  /.wrap  -->
+
+<footer class="main-footer">
+        <hr class="darkgrey2">
         Student Name
-        Back to Top <!-- this should be all caps -->
-        <!-- see tip for hiding BACK TO TOP link on tablet and desktop sizes by combining media queries -->
-    </footer>
+        Back to Top <!--  this should be all caps  -->
+        <!--  see tip for hiding BACK TO TOP link on tablet and desktop sizes by combining media queries  -->
+    </footer>  <!--   /.main-footer   -->
 
 </body>
 </html>
