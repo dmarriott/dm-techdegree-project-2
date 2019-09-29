@@ -77,7 +77,7 @@ base layout
 
 h1.main-title {
     text-align: center;
-    margin: 0px auto;
+    margin: 30px 0px;
 }
 
 .main-nav {
@@ -88,17 +88,13 @@ h1.main-title {
     width: 100%;
 }
 
-.main-nav a {
-    display: block;
-    padding: .5em;
-    margin: 10px 0px 10px 0px;
-    background: white;
-    /* border: 1px solid red; */
-}
-
 .main-nav li {
     font-size: 20px;
     font-size: 2.0rem;   /*   =20px   */  
+    display: block;
+    padding: .5em;
+    margin: 10px auto;
+    background: white;
 }
 
 .aboutme li {
@@ -181,10 +177,7 @@ layout containers
     float: right;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-}
+
 
 /* ==========================================
 media queries
@@ -227,9 +220,27 @@ media queries
         margin: 0 auto;
     }
 
-    .main-nav li {
+    .main-nav {
         font-size: 24px;
         font-size: 2.4rem;   /*   =24px   */
+    }
+
+    .main-nav li {
+        display: inline;
+        margin: 0px auto;
+        background: none;
+    }
+
+    .header-note {
+        float: left;
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .headshot {
+        float: right;
+        width: 30%;
+        margin-left: 15px;
     }
 
     .aboutme li {
@@ -252,7 +263,10 @@ media queries
     }
 }
 
-
+.clearfix:after {
+    content: "";
+    clear: both;
+}
 
 
 
