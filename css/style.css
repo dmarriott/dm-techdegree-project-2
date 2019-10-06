@@ -236,6 +236,13 @@ media queries
         margin: 0 auto;
     }
 
+    .main-header {
+        width: 100%;
+        margin: 0 auto;
+        padding: .5em 0 3em 0;
+        text-align: center;
+    }
+
     .main-nav {
         font-size: 24px;
         font-size: 2.4rem;   /*   =24px   */
@@ -256,6 +263,14 @@ media queries
     .introduction {
         float: left;
         margin-right: 15px;
+    }
+
+    .introduction h4 {
+        text-align: left;
+    }
+
+    .introduction p {
+        text-align: left;
     }
 
     .headshot {
@@ -354,15 +369,23 @@ media queries
         max-width: 1200px;
     }
 
+    .main-title,
     .main-nav {
-        font-size: 24px;
-        font-size: 2.4rem;   /*   =24px   */
-        padding-bottom: 3rem;
+        display: inline;
+    }
+
+    h1.main-title {
+        float: left;
+        margin-top: 0;
+        padding-top: 20px;
     }
 
     .main-nav li {
-        display: inline;
-        margin: 0px auto;
+        float: right;
+        font-size: 24px;
+        font-size: 2.4rem;   /*   =24px   */
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         background: none;
     }
 
@@ -372,10 +395,11 @@ media queries
     }
 
     .introduction {
-        float: left;
+        float: left;    
         margin-right: 15px;
     }
 
+ 
     .headshot {
         float: right;
         margin-left: 15px;
