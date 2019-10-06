@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- 
 Treehouse Techdegree - Front End Web Development
@@ -9,9 +9,11 @@ Dennis Marriott
 -->
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Sintony|Source+Sans+Pro:900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +35,7 @@ Dennis Marriott
                 <img src="images/responsive-layout-profile.png" alt="student headshot">
             </div> <!--   /.main-headshot   -->
             <div class="introduction">
-                <p>Thank you for your interest.</p> 
+                <h4>Thank you for your interest.</h4> 
                 <p>I recently finished a degree in front-end web development at Treehouse and have included my portfolio below.</p> 
                 <p>Although new to development, I have enjoyed much success in business management. I'm excited to put my professional experience and newly honed skills to use for you! </p>
             </div> <!--   /.header-note   -->
@@ -113,8 +115,15 @@ Dennis Marriott
 
     <footer class="main-footer">
         <p><a href="#home" class="student-name-footer">Dennis Marriott</a></p>
-        <p><a href="#home" class="backtotop-footer">Back to Top</a></p> 
-        <!--  see tip for hiding BACK TO TOP link on tablet and desktop sizes by combining media queries  -->
+        <p><a href="#home" class="backtotop-footer">Back to Top</a></p>
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> <!--   /.nav-footer   --> 
     </footer>  <!--   /.main-footer   -->
 
 </body>

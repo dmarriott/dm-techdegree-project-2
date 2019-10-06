@@ -15,7 +15,7 @@ html {
 body {
     font-family: "Sintony", sans-serif;
     line-height: 1.3;
-    color: 000000;
+    color: #000000;
     background: rgba(255,204,102, .3);
     font-size: 14px; 
     font-size: 1.4rem;  /*   =14px   */
@@ -50,9 +50,17 @@ h3 {
     padding-bottom: 0;
 }
 
+h4 {
+    font-size: 18px;
+    font-size: 1.8rem;   /*   =18px   */
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0 auto;
     color: #3a3a3a;
 }
@@ -105,9 +113,9 @@ h1.main-title {
 
 hr.darkgrey2 {
     margin-top: 0px;
-    margin-top: 0rem;   /*   =10px   */
+    margin-top: 0rem;   /*   =0px   */
     margin-bottom: 0px;
-    margin-bottom: 0rem;   /*   =10px   */
+    margin-bottom: 0rem;   /*   =0px   */
     border-top: 1px;
     border-top: .1rem solid darkgrey;
 }
@@ -150,7 +158,7 @@ layout containers
 }
 
 .portfolio-entry {
-    padding: 3em 0 0 0;
+    padding: 3rem;
 }
 
 .aboutme,
@@ -175,6 +183,9 @@ layout containers
     float: right;
 }
 
+.nav-footer li {
+    display: none;
+}
 
 
 /* ==========================================
@@ -195,7 +206,7 @@ media queries
     
     h1 {
         font-size: 32px;
-        font-size: 3.2rem;   /*   =48px   */
+        font-size: 3.2rem;   /*   =32px   */
     }
     
     h2 {
@@ -210,6 +221,13 @@ media queries
         font-size: 24px;
         font-size: 2.4rem;   /*   =24px   */
         padding-top: 1.2rem;
+        padding-bottom: 0;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-size: 2.0rem;   /*   =20px   */
+        padding-top: 1rem;
         padding-bottom: 0;
     }
 
@@ -249,7 +267,7 @@ media queries
         float: left;
         width: calc(100%/2);
         height: 400px;
-        padding: 1rem .5rem;
+        padding: 2rem;
         margin: 0 auto;
     }
 
@@ -259,35 +277,53 @@ media queries
     }
     
     .email-address {
-        font-size: 18px;
-        font-size: 1.8rem;   /*   =14px   */
-    }
-
-    .student-name-footer {
-        float: left;
+        font-size: 16px;
+        font-size: 1.6rem;   /*   =16px   */
     }
     
     .backtotop-footer {
-        text-transform: uppercase;
+        display: none;
+    }
+
+    .student-name-footer {
+        margin-top: 2rem;
+        font-size: 16px;
+        font-size: 1.6rem;   /*   =16px   */
+    }
+
+    .nav-footer {
         float: right;
     }
+
+    .nav-footer li {
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: 16px;
+        font-size: 1.6rem; /*   =16px   */
+        text-align: right;
+        background: none;
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+
 }
 
-/*   target viewport sizes 768px or wider   */
-@media (min-width: 768px) {
+/* ==========================================*/
+/*   target viewport sizes 1024px or wider   */
+@media (min-width: 1024px) {
 
     body {
-        line-height: 1.5;
+        line-height: 1.7;
     }
     
     p {
-        font-size: 14px;
-        font-size: 1.4rem;   /*   =14px   */
+        font-size: 16px;
+        font-size: 1.6rem;   /*   =16px   */
     }
     
     h1 {
         font-size: 32px;
-        font-size: 3.2rem;   /*   =48px   */
+        font-size: 3.2rem;   /*   =32px   */
     }
     
     h2 {
@@ -305,9 +341,17 @@ media queries
         padding-bottom: 0;
     }
 
+    h4 {
+        font-size: 22px;
+        font-size: 2.2rem;   /*   =22px   */
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
     .wrap {
         width: 90%;
         margin: 0 auto;
+        max-width: 1200px;
     }
 
     .main-nav {
@@ -339,32 +383,37 @@ media queries
 
     .portfolio-entry {
         float: left;
-        width: calc(100%/2);
+        width: calc(100%/3);
         height: 400px;
-        padding: 1rem .5rem;
+        padding: 1.5rem;
         margin: 0 auto;
     }
 
     .aboutme li {
-        font-size: 14px;
-        font-size: 1.4rem;   /*   =14px   */  
+        font-size: 16px;
+        font-size: 1.6rem;   /*   =16px   */  
     }
     
     .email-address {
         font-size: 18px;
-        font-size: 1.8rem;   /*   =14px   */
+        font-size: 1.8rem;   /*   =18px   */
     }
 
     .student-name-footer {
-        float: left;
+        margin-top: 2rem;
+        font-size: 20px;
+        font-size: 2rem;   /*   =20px   */
     }
-    
-    .backtotop-footer {
-        text-transform: uppercase;
-        float: right;
+
+    .nav-footer li {
+        margin-top: 2rem;
+        font-size: 20px;
+        font-size: 2rem; /*   =20px   */
     }
+
 }
 
+/* ==========================================*/
 
 .clearfix:after {
     content: "";

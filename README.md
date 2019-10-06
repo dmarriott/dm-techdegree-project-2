@@ -4,7 +4,7 @@
 
 <p>Dennis Marriott</p>
 
-<h2>Assignment - project overview</h2>
+<h2>Assignment overview</h2>
 
 <p>In this project, you'll build a responsive, mobile-first layout using HTML and CSS. The layout should demonstrate an understanding of responsive design by adjusting to accommodate small, medium, and large screen sizes.</p>
 
