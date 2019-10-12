@@ -22,22 +22,24 @@ Dennis Marriott
     <div class="wrap">
 
         <header class="main-header clearfix">
-            <h1 class="main-title" id="home">Dennis Marriott</h1>
-            <nav class="main-nav">
-                <a href="#home">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav> <!--   /.main-nav   -->
+            <div class="banner">
+                <h1 class="main-title" id="home">Dennis Marriott</h1>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>  <!--   /.banner  -->
             <div>
                 <img src="images/responsive-layout-profile.png" alt="student headshot" class="headshot clearfix">
-            </div> <!--   /.main-headshot   -->
+            </div>
             <div class="introduction clearfix">
                 <h4>Thank you for your interest.</h4> 
                 <p>I recently finished a degree in front-end web development at Treehouse and have included my portfolio below.</p> 
                 <p>Although new to development, I have enjoyed much success in business management. I'm excited to put my professional experience and newly honed skills to use for you! </p>
-            </div> <!--   /.header-note   -->
-        </header> <!--  /.main-header  -->
+            </div>
+        </header>
 
         <featured-content>
             <div class="portfolio clearfix">
@@ -45,32 +47,32 @@ Dennis Marriott
                 <div class="portfolio-entry">
                     <img src="images/portfolio-1.png" alt="Marketing front page">
                     <h3>Marketing Page</h3>
-                    <p>This landing page encourages a positive business brand and features their most popular products and services.</p>
+                    <p class="portfolio-text">This landing page encourages a positive business brand and features their most popular products and services.</p>
                 </div>
                 <div class="portfolio-entry">
                     <img src="images/portfolio-2.png" alt="Search front page">
                     <h3>Search Page</h3>
-                    <p>This easy-to-use search page queries a database to help visitors find the perfect program, by any combination of retreat center, teacher, location and date range.</p>
+                    <p class="portfolio-text">This easy-to-use search page queries a database to help visitors find the perfect program, by any combination of retreat center, teacher, location and date range.</p>
                 </div>
                 <div class="portfolio-entry">
                     <img src="images/portfolio-3.png" alt="Travel app front page">
                     <h3>Travel App</h3>
-                    <p>This project compares travel times between specified locations, and based upon the transportation method selected, estimates your arrival time.</p>
+                    <p class="portfolio-text">This project compares travel times between specified locations, and based upon the transportation method selected, estimates your arrival time.</p>
                 </div>
                 <div class="portfolio-entry">
                     <img src="images/portfolio-4.png" alt="Map of favorite spots front page">
                     <h3>Map of Favorite Spots</h3>
-                    <p>Find hidden gems in the city. This project uses mapping APIs to plot points for my favorite spots so you can enjoy a DIY walking tour.</p>
+                    <p class="portfolio-text">Find hidden gems in the city. This project uses mapping APIs to plot points for my favorite spots so you can enjoy a DIY walking tour.</p>
                 </div>
                 <div class="portfolio-entry">
                     <img src="images/portfolio-5.png" alt="Photo gallery front page">
                     <h3>Photo Gallery</h3>
-                    <p>Browse photos from a personal gallery in this project using easy and intuitive navigation. And this is another sentence.</p>
+                    <p class="portfolio-text">Browse photos from a personal gallery in this project using easy and intuitive navigation. And this is another sentence.</p>
                 </div>
                 <div class="portfolio-entry">
                     <img src="images/portfolio-6.png" alt="Calculator front page">
                     <h3>Calculator</h3>
-                    <p>And the answer is? This project allows the viewer to enter significant digits, choose a calculation, and then press the big blue button to instantly view the result.</p>
+                    <p class="portfolio-text">And the answer is? This project allows the viewer to enter significant digits, choose a calculation, and then press the big blue button to instantly view the result.</p>
                 </div>
             </div>  <!--   /.container  -->
         </featured-content>
@@ -101,10 +103,10 @@ Dennis Marriott
             </div>   <!--   /.aboutme   -->
 
             <div class="contact">
-                <hr class="darkgrey">
+                
                 <h2 id="contact">Contact</h2> 
-                <p>Let's chat. I'd love to learn more about your plans and projects, and explore ways that my skills and experience might be applied to help you meet your goals.</p>
-                <p>+1 250.555.1234</p>
+                <p class="contact-text">Let's chat. I'd love to learn more about your plans and projects, and explore ways that my skills and experience might be applied to help you meet your goals.</p>
+                <p class="phone-number">+1 250.555.1234</p>
                 <a class="email-address" href="mailto:email@mysite.com" target="_blank">email@mysite.com</a>
             </div>   <!--   /.contact   -->
         </static-content>
@@ -112,6 +114,7 @@ Dennis Marriott
     </div> <!--  /.wrap  -->
 
     <footer class="main-footer">
+        <hr class="darkgrey">
         <p><a href="#home" class="student-name-footer">Dennis Marriott</a></p>
         <p><a href="#home" class="backtotop-footer">Back to Top</a></p>
         <nav class="nav-footer">
