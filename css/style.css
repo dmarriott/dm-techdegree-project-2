@@ -78,52 +78,8 @@ img {
     max-width: 100%;
 }
 
-
-
 /* ==========================================
-base layout  
-=========================================  */
-
-h1.main-title {
-    text-align: center;
-    margin: 30px 0px;
-}
-
-.main-nav {
-    text-align: center;
-    font-size: 20px;
-    font-size: 2rem;   /*   =20px   */
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.main-nav li {
-    font-size: 20px;
-    font-size: 2.0rem;   /*   =20px   */  
-    display: block;
-    padding: .5em;
-    margin: 10px auto;
-    background: white;
-}
-
-.aboutme li {
-    font-size: 14px;
-    font-size: 1.4rem;   /*   =14px   */  
-}
-
-hr.darkgrey2 {
-    margin-top: 0px;
-    margin-top: 0rem;   /*   =0px   */
-    margin-bottom: 0px;
-    margin-bottom: 0rem;   /*   =0px   */
-    border-top: 1px;
-    border-top: .1rem solid darkgrey;
-}
-
-
-
-/* ==========================================
-layout containers  
+base styles  
 =========================================  */
 
 .wrap {
@@ -137,28 +93,64 @@ layout containers
     text-align: center;
 }
 
+.main-title h1 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.main-nav {
+    font-size: 20px;
+    font-size: 2rem;   /*   =20px   */
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.main-nav a {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-size: 2.0rem;   /*   =20px   */  
+    padding: .5em;
+    margin: 10px auto;
+    background: white;
+}
+
 .headshot {
+    object-fit: cover;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     margin: 0 auto;
     transition: all 1s;
-    object-fit: cover;
 }
 
 .headshot:hover {
     transform: scale(1.1) rotate(0deg);
 }
 
+.aboutme li {
+    font-size: 14px;
+    font-size: 1.4rem;   /*   =14px   */  
+}
+
 .portfolio {
     width: 100%;
-    margin: 0 auto;
     background: white;
     padding: 3rem;
+    margin: 0 auto;
     text-align: center;
 }
 
 .portfolio-entry {
     padding: 3rem;
+}
+
+hr.darkgrey2 {
+    margin-top: 0px;
+    margin-top: 0rem;   /*   =0px   */
+    margin-bottom: 0px;
+    margin-bottom: 0rem;   /*   =0px   */
+    border-top: 1px;
+    border-top: .1rem solid darkgrey;
 }
 
 .aboutme,
@@ -186,7 +178,6 @@ layout containers
 .nav-footer li {
     display: none;
 }
-
 
 /* ==========================================
 media queries
@@ -236,6 +227,11 @@ media queries
         margin: 0 auto;
     }
 
+    .main-header,
+    .main-nav {
+        display: inline-block;
+    }
+
     .main-header {
         width: 100%;
         margin: 0 auto;
@@ -249,7 +245,7 @@ media queries
         padding-bottom: 3rem;
     }
 
-    .main-nav li {
+    .main-nav a {
         display: inline;
         margin: 0px auto;
         background: none;
@@ -374,14 +370,14 @@ media queries
         display: inline;
     }
 
-    h1.main-title {
-        float: left;
+    .main-title h1 {
+        flex-flow: row;
         margin-top: 0;
         padding-top: 20px;
     }
 
-    .main-nav li {
-        float: right;
+    .main-nav a {
+        flex-flow: row-reverse;
         font-size: 24px;
         font-size: 2.4rem;   /*   =24px   */
         padding-top: 3rem;
