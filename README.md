@@ -3,7 +3,7 @@
 <a href="https://teamtreehouse.com/"></a>
 
 <p>Dennis Marriott - October 2019</p>
-<p>(Going for an Exceeds Expectations grade)
+<p>Going for an Exceeds Expectations grade</p>
 
 <h2>Assignment overview</h2>
 
